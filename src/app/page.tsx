@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { projects, reviews } from "@/lib/data";
-import { ArrowRight, Star, Check } from "lucide-react";
+import { projects } from "@/lib/data";
+import { ArrowRight, Check } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         {/* Background Image Restored */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2400&auto=format&fit=crop"
+            src="/photos/1. HD photographs without watermark (min. 800 pixels wide)/46.jpg"
             alt="Hero Architecture"
             fill
             className="object-cover brightness-75"
@@ -154,7 +154,7 @@ export default function Home() {
               <div className="relative aspect-[4/5] overflow-hidden bg-stone-200 rounded-sm">
                 {/* Generic Architectural Image, Not Founder */}
                 <Image
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
+                  src="/photos/1. HD photographs without watermark (min. 800 pixels wide)/35.jpg"
                   alt="a+me Studio Quality"
                   fill
                   className="object-cover transition-all duration-500"

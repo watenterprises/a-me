@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/Container";
+import Image from "next/image";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { services } from "@/lib/data";
@@ -73,12 +74,13 @@ export default function ServicesPage() {
                             </FadeIn>
                         </div>
                         <div className="md:w-1/2 relative h-[500px] w-full bg-stone-200">
-                            <FadeIn delay={0.2} className="h-full w-full">
-                                {/* Abstract geometric composition or construction detail */}
-                                <div className="absolute inset-4 border border-stone-400/30" />
-                                <div className="absolute inset-0 flex items-center justify-center bg-stone-200 text-stone-400">
-                                    <Building className="w-24 h-24 opacity-20" />
-                                </div>
+                            <FadeIn delay={0.2} className="h-full w-full relative">
+                                <Image
+                                    src="/photos/1. HD photographs without watermark (min. 800 pixels wide)/20.jpg"
+                                    alt="Integrated Design"
+                                    fill
+                                    className="object-cover"
+                                />
                             </FadeIn>
                         </div>
                     </div>

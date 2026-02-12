@@ -40,7 +40,7 @@ export default function AboutPage() {
                         <div className="relative aspect-square md:aspect-[4/5] bg-stone-100">
                             <FadeIn delay={0.2}>
                                 <Image
-                                    src="https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=1200&auto=format&fit=crop"
+                                    src="/photos/1. HD photographs without watermark (min. 800 pixels wide)/15.jpg"
                                     alt="Studio Workspace"
                                     fill
                                     className="object-cover"
