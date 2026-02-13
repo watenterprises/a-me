@@ -33,7 +33,7 @@ export default function Home() {
                 <Button variant="primary" size="lg" href="/projects" className="bg-white text-charcoal-900 hover:bg-stone-200">
                   View Projects
                 </Button>
-                <Button variant="outline" size="lg" href="/contact" className="border-white text-white hover:bg-white/10">
+                <Button variant="outline" size="lg" href="https://wa.me/919606407820" className="border-white text-white hover:bg-white/10">
                   Start a conversation
                 </Button>
               </div>
@@ -49,7 +49,7 @@ export default function Home() {
             <div className="max-w-3xl">
               <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500 mb-6">Who We Are</h2>
               <p className="text-xl md:text-2xl text-charcoal-900 leading-relaxed font-serif">
-                a+me is a multidisciplinary design practice based in Bangalore, offering architecture, interior design, and landscape consultancy. Our work is rooted in context, clarity, and a disciplined design process that balances aesthetics, functionality, and longevity.
+                a+me is a Bangalore-based design practice blending architecture, interiors, and landscape with context, clarity, and discipline.
               </p>
               <div className="mt-8">
                 <Link href="/about" className="inline-flex items-center gap-2 group text-charcoal-900 font-medium hover:text-stone-600 transition-colors">
@@ -197,7 +197,7 @@ export default function Home() {
             <p className="text-xl text-stone-400 mb-8 max-w-2xl mx-auto">
               Let&apos;s discuss your vision and how we can bring it to life through thoughtful design.
             </p>
-            <Button variant="primary" size="lg" href="/contact" className="bg-white text-charcoal-900 hover:bg-stone-200">
+            <Button variant="primary" size="lg" href="https://wa.me/919606407820" className="bg-white text-charcoal-900 hover:bg-stone-200">
               Start a conversation
             </Button>
           </FadeIn>

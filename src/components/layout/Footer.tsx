@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
     return (
@@ -7,10 +8,15 @@ export function Footer() {
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     <div className="col-span-1 md:col-span-2">
-                        <Link href="/" className="font-serif text-2xl font-bold tracking-tighter text-charcoal-900">
-                            a+me
+                        <Link href="/" className="inline-block relative h-10 w-24 mb-4">
+                            <Image
+                                src="/logo.png"
+                                alt="a+me Logo"
+                                fill
+                                className="object-contain object-left"
+                            />
                         </Link>
-                        <p className="mt-6 max-w-sm text-stone-600 text-sm leading-relaxed">
+                        <p className="mt-2 max-w-sm text-stone-600 text-sm leading-relaxed">
                             a+me is a multidisciplinary design practice based in Bangalore, offering architecture, interior design, and landscape consultancy.
                         </p>
                     </div>
