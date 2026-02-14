@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: var(--font-playfair);
-  --font-sans: var(--font-inter);
+  --font-serif: var(--font-urbanist);
+  --font-sans: var(--font-urbanist);
 
   --color-stone-50: #f9f9f7;
   --color-stone-100: #efefe9;

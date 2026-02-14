@@ -102,10 +102,10 @@ export default function Home() {
       <Section className="bg-charcoal-900 text-white">
         <Container>
           <FadeIn>
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h2 className="text-sm font-bold tracking-widest uppercase text-stone-400">Our Philosophy</h2>
-              <p className="text-2xl md:text-3xl font-serif leading-relaxed text-stone-100">
-                &quot;The name a+me embodies the essence of our design ideology—one that emphasizes the thoughtful integration of multiple factors to innovate and create meaningful architectural forms.&quot;
+            <div className="max-w-4xl mx-auto space-y-8">
+              <h2 className="text-sm font-bold tracking-widest uppercase text-stone-400">"a+me" Equation</h2>
+              <p className="text-xl md:text-2xl font-serif leading-relaxed text-stone-100">
+                The name of our architecture firm embodies the essence of our design ideology, which emphasizes the thoughtful integration of multiple factors to innovate and create fresh forms. The concept revolves around the equation &quot;a + me.&quot; Here, &quot;a&quot; symbolizes architecture—the foundational element of our work—while the &quot;+&quot; represents the collaboration with our clients, highlighting the personalized approach we take in each project. The term &quot;me&quot; signifies the range of services we provide, conveyed through various mediums. Together, these elements merge to reflect our commitment to co-creating unique architectural solutions that resonate with both our clients&apos; visions and the surrounding environment.
               </p>
               <Link href="/about" className="inline-block border-b border-white pb-1 hover:text-stone-300 hover:border-stone-300 transition-colors">
                 Read our full story

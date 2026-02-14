@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
@@ -16,6 +17,12 @@ const navLinks = [
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname();
+
+    const isActive = (href: string) => {
+        if (href === "/") return pathname === "/";
+        return pathname.startsWith(href);
+    };
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/60">
@@ -34,7 +41,10 @@ export function Navbar() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="text-sm font-medium text-charcoal-600 hover:text-charcoal-900 transition-colors uppercase tracking-widest"
+                            className={`text-sm font-medium transition-colors uppercase tracking-widest ${isActive(link.href)
+                                ? "text-orange-500"
+                                : "text-charcoal-600 hover:text-charcoal-900"
+                                }`}
                         >
                             {link.name}
                         </Link>
@@ -59,7 +69,10 @@ export function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="text-lg font-medium text-charcoal-900 hover:text-stone-600 transition-colors"
+                                className={`text-lg font-medium transition-colors ${isActive(link.href)
+                                        ? "text-orange-500"
+                                        : "text-charcoal-900 hover:text-stone-600"
+                                    }`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {link.name}
