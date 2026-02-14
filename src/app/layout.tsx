@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.variable} antialiased bg-stone-50 text-charcoal-900 font-sans selection:bg-charcoal-900 selection:text-white flex flex-col min-h-screen`}
+        className={`${urbanist.className} antialiased bg-stone-50 text-charcoal-900 selection:bg-charcoal-900 selection:text-white flex flex-col min-h-screen`}
       >
         <Navbar />
         <main className="flex-1">
