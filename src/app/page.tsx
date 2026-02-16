@@ -103,7 +103,7 @@ export default function Home() {
         <Container>
           <FadeIn>
             <div className="max-w-4xl mx-auto space-y-8">
-              <h2 className="text-sm font-bold tracking-widest uppercase text-stone-400">"a+me" Equation</h2>
+              <h2 className="text-sm font-bold tracking-widest text-stone-400">"a+me" Equation</h2>
               <p className="text-xl md:text-2xl font-serif leading-relaxed text-stone-100">
                 The name of our architecture firm embodies the essence of our design ideology, which emphasizes the thoughtful integration of multiple factors to innovate and create fresh forms. The concept revolves around the equation &quot;a + me.&quot; Here, &quot;a&quot; symbolizes architecture—the foundational element of our work—while the &quot;+&quot; represents the collaboration with our clients, highlighting the personalized approach we take in each project. The term &quot;me&quot; signifies the range of services we provide, conveyed through various mediums. Together, these elements merge to reflect our commitment to co-creating unique architectural solutions that resonate with both our clients&apos; visions and the surrounding environment.
               </p>
@@ -162,7 +162,7 @@ export default function Home() {
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500 mb-4">Why a+me</h2>
+              <h2 className="text-sm font-bold tracking-widest text-stone-500 mb-4">Why a+me</h2>
               <h3 className="text-3xl md:text-4xl font-serif text-charcoal-900 mb-8">Distinctive, Relevant, Enduring.</h3>
               <ul className="space-y-6">
                 {[
