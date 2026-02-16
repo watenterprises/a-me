@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[90vh] min-h-[600px] w-full overflow-hidden flex items-center">
+      <section className="relative h-[80vh] sm:h-[90vh] min-h-[500px] sm:min-h-[600px] w-full overflow-hidden flex items-center">
         {/* Background Image Restored */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -25,15 +25,15 @@ export default function Home() {
         </div>
         <Container className="relative z-10 text-white">
           <FadeIn>
-            <div className="max-w-4xl space-y-8">
-              <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight text-white/100">
+            <div className="max-w-4xl space-y-6 sm:space-y-8">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-serif leading-tight text-white/100">
                 Every project begins with <span className="italic font-light text-stone-200">understanding</span>—creating meaningful architecture rooted in context, purpose, and experience.
               </h1>
-              <div className="pt-4 flex gap-4">
-                <Button variant="primary" size="lg" href="/projects" className="bg-white text-charcoal-900 hover:bg-stone-200">
+              <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row gap-4">
+                <Button variant="primary" size="lg" href="/projects" className="bg-white text-charcoal-900 hover:bg-stone-200 w-full sm:w-auto text-center justify-center">
                   View Projects
                 </Button>
-                <Button variant="outline" size="lg" href="https://wa.me/919606407820" className="border-white text-white hover:bg-white/10">
+                <Button variant="outline" size="lg" href="https://wa.me/919606407820" className="border-white text-white hover:bg-white/10 w-full sm:w-auto text-center justify-center">
                   Start a conversation
                 </Button>
               </div>
