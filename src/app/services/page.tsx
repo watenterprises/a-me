@@ -19,7 +19,7 @@ export default function ServicesPage() {
             <section className="bg-stone-900 text-stone-100 pt-32 pb-16 md:pt-48 md:pb-24">
                 <Container>
                     <FadeIn>
-                        <h1 className="text-5xl md:text-7xl font-serif mb-8">
+                        <h1 className="text-5xl md:text-7xl font-serif mb-8 text-white">
                             Our Expertise
                         </h1>
                         <p className="max-w-2xl text-lg md:text-xl text-stone-400 leading-relaxed">

@@ -25,7 +25,7 @@ export function Footer() {
                         <h4 className="font-medium text-charcoal-900 mb-6 uppercase tracking-widest text-xs">Explore</h4>
                         <ul className="space-y-4 text-sm text-stone-600">
                             <li><Link href="/projects" className="hover:text-charcoal-900 transition-colors">Projects</Link></li>
-                            <li><Link href="/about" className="hover:text-charcoal-900 transition-colors">Studio</Link></li>
+                            <li><Link href="/about" className="hover:text-charcoal-900 transition-colors">About</Link></li>
                             <li><Link href="/services" className="hover:text-charcoal-900 transition-colors">Services</Link></li>
                         </ul>
                     </div>
@@ -33,9 +33,23 @@ export function Footer() {
                     <div>
                         <h4 className="font-medium text-charcoal-900 mb-6 uppercase tracking-widest text-xs">Connect</h4>
                         <ul className="space-y-4 text-sm text-stone-600">
-                            <li><a href="mailto:info@aplusme.in" className="hover:text-charcoal-900 transition-colors">info@aplusme.in</a></li>
-                            <li><a href="tel:+919606407820" className="hover:text-charcoal-900 transition-colors">+91 96064 07820</a></li>
-                            <li><Link href="/contact" className="hover:text-charcoal-900 transition-colors">Book Consultation</Link></li>
+                            <li className="flex flex-col">
+                                <span className="text-[10px] uppercase tracking-tighter text-stone-400">Projects enquire</span>
+                                <a href="mailto:info@aplusme.in" className="hover:text-charcoal-900 transition-colors">info@aplusme.in</a>
+                            </li>
+                            <li className="flex flex-col">
+                                <span className="text-[10px] uppercase tracking-tighter text-stone-400">For vendors for consults</span>
+                                <a href="mailto:office@aplusme.in" className="hover:text-charcoal-900 transition-colors">office@aplusme.in</a>
+                            </li>
+                            <li className="flex flex-col">
+                                <span className="text-[10px] uppercase tracking-tighter text-stone-400">For jobs and internships</span>
+                                <a href="mailto:careers@aplusme.in" className="hover:text-charcoal-900 transition-colors">careers@aplusme.in</a>
+                            </li>
+                            <li className="flex flex-col mt-2">
+                                <a href="tel:+919606407820" className="hover:text-charcoal-900 transition-colors">+91 96064 07820</a>
+                                <a href="tel:+917907261843" className="hover:text-charcoal-900 transition-colors">+91 79072 61843</a>
+                            </li>
+                            <li className="mt-2"><Link href="/contact" className="hover:text-charcoal-900 transition-colors">Book Consultation</Link></li>
                         </ul>
                     </div>
                 </div>
