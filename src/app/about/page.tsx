@@ -10,24 +10,24 @@ export default function AboutPage() {
     return (
         <div className="flex flex-col">
             {/* Navigation Links */}
-            <section className="bg-white border-b border-stone-200 sticky top-20 z-40 bg-white/95 backdrop-blur pt-4">
+            <section className="bg-white border-b border-black sticky top-20 z-40 bg-white/95 backdrop-blur pt-4">
                 <Container>
                     <div className="flex gap-6 md:gap-8">
                         <a
                             href="#firm"
-                            className="py-3 text-xs uppercase tracking-wider text-stone-500 hover:text-orange-500 transition-colors"
+                            className="py-3 text-xs uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
                         >
                             Firm
                         </a>
                         <a
                             href="#philosophy"
-                            className="py-3 text-xs uppercase tracking-wider text-stone-500 hover:text-orange-500 transition-colors"
+                            className="py-3 text-xs uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
                         >
                             Design Philosophy
                         </a>
                         <a
                             href="#principals"
-                            className="py-3 text-xs uppercase tracking-wider text-stone-500 hover:text-orange-500 transition-colors"
+                            className="py-3 text-xs uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
                         >
                             Principals
                         </a>
@@ -40,9 +40,9 @@ export default function AboutPage() {
                 <Container>
                     <FadeIn>
                         <div className="max-w-4xl space-y-3">
-                            <h2 className="text-xl font-medium text-charcoal-900">The Firm</h2>
+                            <h2 className="text-xl font-medium uppercase text-black">The Firm</h2>
 
-                            <div className="space-y-1.5 text-sm leading-none text-stone-700">
+                            <div className="space-y-1.5 text-sm leading-none text-black">
                                 <p>
                                     a+me, a multidisciplinary Architecture and Interior Design firm based in Bangalore, India, was established in 2018.
                                 </p>
@@ -69,9 +69,9 @@ export default function AboutPage() {
                 <Container>
                     <FadeIn>
                         <div className="max-w-4xl space-y-3">
-                            <h2 className="text-xl font-medium text-charcoal-900">Design Philosophy</h2>
+                            <h2 className="text-xl font-medium uppercase text-black">Design Philosophy</h2>
 
-                            <div className="space-y-1.5 text-sm leading-none text-stone-700">
+                            <div className="space-y-1.5 text-sm leading-none text-black">
                                 <p>
                                     At a+me, we believe that exceptional architecture emerges from a deep understanding of context, purpose, and the people who inhabit our spaces. Our design philosophy is rooted in the thoughtful integration of multiple factors to create meaningful architectural forms.
                                 </p>
@@ -102,7 +102,7 @@ export default function AboutPage() {
                 <Container>
                     <FadeIn>
                         <div className="space-y-6">
-                            <h2 className="text-xl font-medium text-charcoal-900">Principals</h2>
+                            <h2 className="text-xl font-medium uppercase text-black">Principals</h2>
 
                             <div className="space-y-10">
                                 {team.map((member) => (
@@ -117,10 +117,10 @@ export default function AboutPage() {
                                         </div>
                                         <div className="space-y-3">
                                             <div>
-                                                <h3 className="text-base font-medium text-charcoal-900">{member.name}</h3>
-                                                <p className="text-xs text-stone-500">{member.role}</p>
+                                                <h3 className="text-base font-medium uppercase text-black">{member.name}</h3>
+                                                <p className="text-xs text-black">{member.role}</p>
                                             </div>
-                                            <p className="text-sm leading-none text-stone-700">{member.bio}</p>
+                                            <p className="text-sm leading-none text-black">{member.bio}</p>
                                         </div>
                                     </div>
                                 ))}

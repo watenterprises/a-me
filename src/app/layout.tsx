@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
-const urbanist = Urbanist({
-  variable: "--font-urbanist",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.className} antialiased bg-stone-50 text-charcoal-900 selection:bg-charcoal-900 selection:text-white flex flex-col min-h-screen`}
+        className={`${poppins.className} antialiased bg-stone-50 text-black selection:bg-black selection:text-white flex flex-col min-h-screen`}
       >
         <Navbar />
         <main className="flex-1">

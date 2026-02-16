@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: var(--font-urbanist);
-  --font-sans: var(--font-urbanist);
+  --font-serif: var(--font-poppins);
+  --font-sans: var(--font-poppins);
 
   --color-stone-50: #f9f9f7;
   --color-stone-100: #efefe9;
@@ -40,20 +40,37 @@
   --animate-fade-in: fadeIn 0.8s ease-out forwards;
   --animate-slide-up: slideUp 1s ease-out forwards;
   --animate-reveal: reveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  
+
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
-  
+
   @keyframes slideUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   @keyframes reveal {
-    from { clip-path: inset(0 100% 0 0); }
-    to { clip-path: inset(0 0 0 0); }
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+      clip-path: inset(0 0 0 0);
+    }
   }
 }
 
@@ -62,13 +79,20 @@
   body {
     @apply antialiased tracking-tight;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight text-charcoal-900;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif tracking-tight text-black;
+    color: #000000 !important;
   }
 
   p {
-    @apply text-stone-600 leading-relaxed font-sans;
+    @apply leading-relaxed font-sans text-black;
+    color: #000000 !important;
   }
 }
 
