@@ -38,7 +38,7 @@ export default function ContactPage() {
                             Contact Us
                         </h1>
                         <p className="text-sm text-stone-400 leading-relaxed">
-                            Let&apos;s discuss your vision. We are currently accepting new projects for 2025.
+                            Let&apos;s discuss your vision. We are currently accepting new projects for {new Date().getFullYear()}.
                         </p>
                     </FadeIn>
                 </Container>
