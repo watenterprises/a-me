@@ -69,9 +69,9 @@ export function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`text-lg font-medium transition-colors ${isActive(link.href)
-                                        ? "text-orange-500"
-                                        : "text-charcoal-900 hover:text-stone-600"
+                                className={`text-xl font-medium transition-colors ${isActive(link.href)
+                                    ? "text-orange-500"
+                                    : "text-charcoal-900 hover:text-stone-600"
                                     }`}
                                 onClick={() => setIsMenuOpen(false)}
                             >

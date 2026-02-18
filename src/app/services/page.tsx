@@ -22,7 +22,7 @@ export default function ServicesPage() {
                         <h1 className="text-5xl md:text-7xl font-serif mb-8 text-white">
                             Our Expertise
                         </h1>
-                        <p className="max-w-2xl text-lg md:text-xl text-stone-400 leading-relaxed">
+                        <p className="text-sm text-stone-400 leading-relaxed">
                             Comprehensive design solutions tailored to your unique vision. We guide you through every stage, from initial concept to final handover.
                         </p>
                     </FadeIn>
@@ -41,8 +41,8 @@ export default function ServicesPage() {
                                         <div className="w-16 h-16 bg-stone-100 flex items-center justify-center rounded-sm group-hover:bg-charcoal-900 transition-colors duration-500">
                                             <Icon className="w-8 h-8 text-charcoal-900 group-hover:text-white transition-colors duration-500" strokeWidth={1} />
                                         </div>
-                                        <h3 className="text-2xl font-serif text-charcoal-900">{service.title}</h3>
-                                        <p className="text-stone-600 leading-relaxed">{service.description}</p>
+                                        <h3 className="text-xl font-serif text-charcoal-900 uppercase tracking-widest">{service.title}</h3>
+                                        <p className="text-stone-600 leading-relaxed text-sm">{service.description}</p>
                                     </div>
                                 </FadeIn>
                             );
@@ -58,15 +58,15 @@ export default function ServicesPage() {
                         <div className="md:w-1/2 space-y-8">
                             <FadeIn>
                                 <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500">Holistic Approach</h2>
-                                <h3 className="text-4xl font-serif text-charcoal-900">Integrated Design Solutions</h3>
-                                <p className="text-lg text-stone-600 leading-relaxed">
+                                <h3 className="text-xl font-serif text-charcoal-900 uppercase tracking-widest">Integrated Design Solutions</h3>
+                                <p className="text-sm text-stone-600 leading-relaxed">
                                     We offer a seamless experience by integrating architecture, interior design, and landscape consultancy. This cohesive approach ensures your vision is unified from the structure to the smallest interior detail.
                                 </p>
                                 <div className="space-y-4">
                                     {["Single point of responsibility", "Streamlined timeline", "Cost certainty", "Uncompromised quality control"].map(item => (
                                         <div key={item} className="flex items-center gap-3">
                                             <CheckCircle2 className="w-5 h-5 text-stone-400" />
-                                            <span className="text-charcoal-700 font-medium">{item}</span>
+                                            <span className="text-charcoal-700 font-medium text-sm">{item}</span>
                                         </div>
                                     ))}
                                 </div>

@@ -23,7 +23,7 @@ export default function GalleryPage() {
                     <FadeIn>
                         <div className="max-w-2xl mb-12">
                             <h1 className="text-4xl md:text-5xl font-serif text-charcoal-900 mb-6">Visual Archive</h1>
-                            <p className="text-lg text-stone-600 leading-relaxed">
+                            <p className="text-sm text-stone-600 leading-relaxed">
                                 A collection of moments, details, and spaces from our portfolio.
                             </p>
                         </div>

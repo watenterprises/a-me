@@ -45,7 +45,7 @@ export function ProjectGrid() {
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
-                        <h3 className="text-base font-normal text-charcoal-900 group-hover:text-stone-600 transition-colors mb-1">
+                        <h3 className="text-xl font-normal text-charcoal-900 group-hover:text-stone-600 transition-colors mb-1">
                             {project.title}
                         </h3>
                         <p className="text-sm text-stone-500">{project.location || "Bangalore"}</p>

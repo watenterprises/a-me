@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { projects } from "@/lib/data";
+import { cn } from "@/lib/utils";
 import { ArrowLeft } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 
@@ -54,19 +55,19 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                             <FadeIn delay={0.2}>
                                 <div className="grid grid-cols-2 gap-4 text-sm">
                                     <div>
-                                        <span className="block text-stone-500 uppercase tracking-widest text-xs mb-1">Location</span>
+                                        <span className="block text-stone-500 uppercase tracking-widest text-sm mb-1">Location</span>
                                         <span className="text-charcoal-900 font-medium">{project.location}</span>
                                     </div>
                                     <div>
-                                        <span className="block text-stone-500 uppercase tracking-widest text-xs mb-1">Year</span>
+                                        <span className="block text-stone-500 uppercase tracking-widest text-sm mb-1">Year</span>
                                         <span className="text-charcoal-900 font-medium">{project.year}</span>
                                     </div>
                                     <div>
-                                        <span className="block text-stone-500 uppercase tracking-widest text-xs mb-1">Category</span>
+                                        <span className="block text-stone-500 uppercase tracking-widest text-sm mb-1">Category</span>
                                         <span className="text-charcoal-900 font-medium">{project.category}</span>
                                     </div>
                                     <div>
-                                        <span className="block text-stone-500 uppercase tracking-widest text-xs mb-1">Client</span>
+                                        <span className="block text-stone-500 uppercase tracking-widest text-sm mb-1">Client</span>
                                         <span className="text-charcoal-900 font-medium">Private</span>
                                     </div>
                                 </div>
@@ -76,17 +77,23 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
                         <div className="md:col-span-8 space-y-6">
                             <FadeIn>
-                                <h2 className="text-3xl font-serif text-charcoal-900">The Concept</h2>
-                                <p className="text-lg text-stone-600 leading-relaxed whitespace-pre-line">
+                                <h2 className="text-xl font-serif text-charcoal-900 uppercase tracking-widest">The Concept</h2>
+                                <p className="text-sm text-stone-600 leading-relaxed whitespace-pre-line">
                                     {project.description}
                                 </p>
                             </FadeIn>
 
                             {/* Gallery Grid */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                                 {/* @ts-ignore */}
                                 {project.gallery?.map((img: string, index: number) => (
-                                    <div key={index} className="aspect-[4/3] bg-stone-100 relative overflow-hidden">
+                                    <div
+                                        key={index}
+                                        className={cn(
+                                            "relative overflow-hidden bg-stone-100",
+                                            index % 3 === 0 ? "md:col-span-2 aspect-[16/9]" : "aspect-[4/5]"
+                                        )}
+                                    >
                                         <FadeIn delay={index * 0.05}>
                                             <Image
                                                 src={img}
@@ -102,7 +109,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                     </div>
 
                     <div className="mt-24 pt-12 border-t border-stone-200">
-                        <Link href="/projects" className="inline-flex items-center text-charcoal-900 hover:text-stone-500 transition-colors gap-2 font-medium">
+                        <Link href="/projects" className="inline-flex items-center text-charcoal-900 hover:text-stone-500 transition-colors gap-2 font-medium text-sm">
                             <ArrowLeft className="w-4 h-4" /> Back to Projects
                         </Link>
                     </div>

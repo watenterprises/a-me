@@ -37,8 +37,8 @@ export default function ContactPage() {
                         <h1 className="text-5xl md:text-7xl font-serif mb-8 text-white">
                             Contact Us
                         </h1>
-                        <p className="max-w-2xl text-lg md:text-xl text-stone-400 leading-relaxed">
-                            Let's discuss your vision. We are currently accepting new projects for 2025.
+                        <p className="text-sm text-stone-400 leading-relaxed">
+                            Let&apos;s discuss your vision. We are currently accepting new projects for 2025.
                         </p>
                     </FadeIn>
                 </Container>
@@ -51,42 +51,42 @@ export default function ContactPage() {
                         <div className="space-y-12">
                             <div>
                                 <FadeIn delay={0.1}>
-                                    <h3 className="text-2xl font-serif text-charcoal-900 mb-6">Office</h3>
+                                    <h3 className="text-xl font-serif text-charcoal-900 mb-6 uppercase tracking-widest">Office</h3>
                                     <ul className="space-y-6">
                                         <li className="flex gap-4 items-start">
                                             <MapPin className="w-6 h-6 text-charcoal-900 mt-1" />
-                                            <span className="text-stone-600 text-lg">No.245, 3rd Floor, HMT Layout,<br />Nellagadranahalli, Bengaluru – 560073</span>
+                                            <span className="text-stone-600 text-sm">No.245, 3rd Floor, HMT Layout,<br />Nellagadranahalli, Bengaluru – 560073</span>
                                         </li>
                                         <li className="flex gap-4 items-start">
                                             <Mail className="w-6 h-6 text-charcoal-900 mt-1" />
                                             <div className="flex flex-col space-y-2">
                                                 <div className="flex flex-col">
-                                                    <span className="text-xs font-bold uppercase tracking-widest text-stone-400">Projects enquire</span>
-                                                    <a href="mailto:info@aplusme.in" className="text-stone-600 text-lg hover:text-charcoal-900 transition-colors">info@aplusme.in</a>
+                                                    <span className="text-sm font-bold uppercase tracking-widest text-stone-400">Projects enquire</span>
+                                                    <a href="mailto:info@aplusme.in" className="text-stone-600 text-sm hover:text-charcoal-900 transition-colors">info@aplusme.in</a>
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <span className="text-xs font-bold uppercase tracking-widest text-stone-400">For vendors for consults</span>
-                                                    <a href="mailto:office@aplusme.in" className="text-stone-600 text-lg hover:text-charcoal-900 transition-colors">office@aplusme.in</a>
+                                                    <span className="text-sm font-bold uppercase tracking-widest text-stone-400">For vendors for consults</span>
+                                                    <a href="mailto:office@aplusme.in" className="text-stone-600 text-sm hover:text-charcoal-900 transition-colors">office@aplusme.in</a>
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <span className="text-xs font-bold uppercase tracking-widest text-stone-400">For jobs and internships</span>
-                                                    <a href="mailto:careers@aplusme.in" className="text-stone-600 text-lg hover:text-charcoal-900 transition-colors">careers@aplusme.in</a>
+                                                    <span className="text-sm font-bold uppercase tracking-widest text-stone-400">For jobs and internships</span>
+                                                    <a href="mailto:careers@aplusme.in" className="text-stone-600 text-sm hover:text-charcoal-900 transition-colors">careers@aplusme.in</a>
                                                 </div>
                                             </div>
                                         </li>
                                         <li className="flex gap-4 items-center">
                                             <Phone className="w-6 h-6 text-charcoal-900" />
                                             <div className="flex flex-col">
-                                                <a href="tel:+919606407820" className="text-stone-600 text-lg hover:text-charcoal-900 transition-colors">+91 96064 07820</a>
-                                                <a href="tel:+917907261843" className="text-stone-600 text-lg hover:text-charcoal-900 transition-colors">+91 79072 61843</a>
+                                                <a href="tel:+919606407820" className="text-stone-600 text-sm hover:text-charcoal-900 transition-colors">+91 96064 07820</a>
+                                                <a href="tel:+917907261843" className="text-stone-600 text-sm hover:text-charcoal-900 transition-colors">+91 79072 61843</a>
                                             </div>
                                         </li>
                                     </ul>
                                 </FadeIn>
                             </div>
 
-                            <FadeIn delay={0.2} className="h-full">
-                                <div className="h-64 w-full bg-stone-100 relative grayscale rounded-sm overflow-hidden">
+                            <FadeIn delay={0.2} className="w-full">
+                                <div className="h-[400px] w-full bg-stone-100 relative grayscale rounded-sm overflow-hidden">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4003.4364132512537!2d77.50061107515377!3d13.033887513509463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dd489581821%3A0xbaa5caff7f389b35!2sa%2Bme%20Architects!5e1!3m2!1sen!2sin!4v1771235770931!5m2!1sen!2sin"
                                         width="100%"
@@ -104,10 +104,10 @@ export default function ContactPage() {
                         {/* Form */}
                         <div className="bg-stone-50 p-8 md:p-12 rounded-sm">
                             <FadeIn delay={0.3}>
-                                <h3 className="text-2xl font-serif text-charcoal-900 mb-8">Send a Message</h3>
+                                <h3 className="text-xl font-serif text-charcoal-900 mb-8 uppercase tracking-widest">Send a Message</h3>
                                 <form className="space-y-6" onSubmit={handleSubmit}>
                                     <div className="space-y-2">
-                                        <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-stone-500">Name</label>
+                                        <label htmlFor="name" className="text-sm font-bold uppercase tracking-widest text-stone-500">Name</label>
                                         <input
                                             type="text"
                                             id="name"
@@ -119,7 +119,7 @@ export default function ContactPage() {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-stone-500">Email</label>
+                                        <label htmlFor="email" className="text-sm font-bold uppercase tracking-widest text-stone-500">Email</label>
                                         <input
                                             type="email"
                                             id="email"
@@ -131,7 +131,7 @@ export default function ContactPage() {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-stone-500">Message</label>
+                                        <label htmlFor="message" className="text-sm font-bold uppercase tracking-widest text-stone-500">Message</label>
                                         <textarea
                                             id="message"
                                             required

@@ -15,19 +15,19 @@ export default function AboutPage() {
                     <div className="flex gap-6 md:gap-8">
                         <a
                             href="#firm"
-                            className="py-3 text-xs uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
+                            className="py-3 text-sm uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
                         >
                             Firm
                         </a>
                         <a
                             href="#philosophy"
-                            className="py-3 text-xs uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
+                            className="py-3 text-sm uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
                         >
                             Design Philosophy
                         </a>
                         <a
                             href="#principals"
-                            className="py-3 text-xs uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
+                            className="py-3 text-sm uppercase tracking-wider text-black hover:text-orange-500 transition-colors"
                         >
                             Principals
                         </a>
@@ -39,7 +39,7 @@ export default function AboutPage() {
             <Section className="bg-white" id="firm">
                 <Container>
                     <FadeIn>
-                        <div className="max-w-4xl space-y-3">
+                        <div className="space-y-3">
                             <h2 className="text-xl font-medium text-black uppercase">THE FIRM</h2>
 
                             <div className="space-y-1.5 text-sm leading-none text-black [&_p]:text-black">
@@ -68,7 +68,7 @@ export default function AboutPage() {
             <Section className="bg-white" id="philosophy">
                 <Container>
                     <FadeIn>
-                        <div className="max-w-4xl space-y-3">
+                        <div className="space-y-3">
                             <h2 className="text-xl font-medium text-black uppercase">DESIGN PHILOSOPHY</h2>
 
                             <div className="space-y-1.5 text-sm leading-none text-black [&_p]:text-black">
@@ -117,8 +117,8 @@ export default function AboutPage() {
                                         </div>
                                         <div className="space-y-3">
                                             <div>
-                                                <h3 className="text-base font-medium text-black">{member.name}</h3>
-                                                <p className="text-xs text-black">{member.role}</p>
+                                                <h3 className="text-xl font-medium text-black">{member.name}</h3>
+                                                <p className="text-sm text-black">{member.role}</p>
                                             </div>
                                             <p className="text-sm leading-none text-black">{member.bio}</p>
                                         </div>
