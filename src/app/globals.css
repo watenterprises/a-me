@@ -96,7 +96,7 @@
 
 /* Custom Utilities */
 @utility container-wide {
-  @apply mx-auto px-6 md:px-12;
+  @apply mx-auto px-6 md:px-12 max-w-7xl;
 }
 
 @utility text-balance {

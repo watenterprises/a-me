@@ -61,15 +61,15 @@ export default function ContactPage() {
                                             <Mail className="w-6 h-6 text-charcoal-900 mt-1" />
                                             <div className="flex flex-col space-y-2">
                                                 <div className="flex flex-col">
-                                                    <span className="text-sm font-bold uppercase tracking-widest text-stone-400">Projects enquire</span>
+                                                    <span className="text-sm font-bold text-stone-900">For Project and Business Enquiry</span>
                                                     <a href="mailto:info@aplusme.in" className="text-stone-600 text-sm hover:text-charcoal-900 transition-colors">info@aplusme.in</a>
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <span className="text-sm font-bold uppercase tracking-widest text-stone-400">For vendors for consults</span>
+                                                    <span className="text-sm font-bold text-stone-900">For Vendors and Consultants</span>
                                                     <a href="mailto:office@aplusme.in" className="text-stone-600 text-sm hover:text-charcoal-900 transition-colors">office@aplusme.in</a>
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <span className="text-sm font-bold uppercase tracking-widest text-stone-400">For jobs and internships</span>
+                                                    <span className="text-sm font-bold text-stone-900">For Employment and Internship</span>
                                                     <a href="mailto:careers@aplusme.in" className="text-stone-600 text-sm hover:text-charcoal-900 transition-colors">careers@aplusme.in</a>
                                                 </div>
                                             </div>

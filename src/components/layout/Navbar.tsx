@@ -26,7 +26,7 @@ export function Navbar() {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/60">
-            <Container className="flex h-20 items-center justify-between">
+            <Container className="flex h-20 items-center justify-between max-w-none">
                 <Link href="/" className="relative h-12 w-32">
                     <Image
                         src="/logo.png"
