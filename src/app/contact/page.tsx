@@ -31,10 +31,10 @@ export default function ContactPage() {
 
     return (
         <div className="flex flex-col">
-            <section className="bg-charcoal-900 text-white pt-32 pb-16 md:pt-48 md:pb-24">
+            <section className="bg-charcoal-900 text-white pt-24 pb-12 md:pt-32 md:pb-16">
                 <Container>
                     <FadeIn>
-                        <h1 className="text-5xl md:text-7xl font-serif mb-8 text-white">
+                        <h1 className="text-3xl md:text-5xl font-serif mb-8 text-white">
                             Contact Us
                         </h1>
                         <p className="text-sm text-stone-400 leading-relaxed">
