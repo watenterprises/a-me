@@ -15,7 +15,7 @@ export default function Home() {
         {/* Background Image Restored */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/photos/1. HD photographs without watermark (min. 800 pixels wide)/46.jpg"
+            src="/photos/1. HD photographs without watermark (min. 800 pixels wide)/16.jpg"
             alt="Hero Architecture"
             fill
             className="object-cover brightness-75"
@@ -48,7 +48,7 @@ export default function Home() {
           <FadeIn>
             <div>
               <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500 mb-6">Who We Are</h2>
-              <p className="text-xl text-charcoal-900 leading-relaxed font-serif">
+              <p className="text-sm text-charcoal-900 leading-loose">
                 a+me is a Bangalore-based design practice blending architecture, interiors, and landscape with context, clarity, and discipline.
               </p>
               <div className="mt-8">
@@ -68,7 +68,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
               <div>
                 <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500 mb-2">Selected Works</h2>
-                <h3 className="text-xl font-serif text-charcoal-900">Featured Projects</h3>
+                <h3 className="text-sm font-medium text-charcoal-900 uppercase tracking-widest">Featured Projects</h3>
               </div>
               <Button variant="link" href="/projects">View All Projects <ArrowRight className="w-4 h-4 ml-2" /></Button>
             </div>
@@ -88,8 +88,8 @@ export default function Home() {
                   </div>
                   <div className="space-y-2">
                     <span className="text-sm font-bold tracking-widest uppercase text-stone-500">{project.category}</span>
-                    <h4 className="text-xl font-serif text-charcoal-900 group-hover:text-stone-600 transition-colors">{project.title}</h4>
-                    <p className="text-stone-600 line-clamp-2 text-sm">{project.description}</p>
+                    <h4 className="text-sm font-medium uppercase tracking-widest text-charcoal-900 group-hover:text-stone-600 transition-colors">{project.title}</h4>
+                    <p className="text-stone-600 line-clamp-2 text-sm leading-loose">{project.description}</p>
                   </div>
                 </Link>
               </FadeIn>
@@ -104,7 +104,7 @@ export default function Home() {
           <FadeIn>
             <div className="mx-auto space-y-8">
               <h2 className="text-sm font-bold tracking-widest text-stone-400">"a+me" Equation</h2>
-              <p className="text-xl font-serif leading-relaxed text-stone-100">
+              <p className="text-sm leading-loose text-stone-100">
                 The name of our architecture firm embodies the essence of our design ideology, which emphasizes the thoughtful integration of multiple factors to innovate and create fresh forms. The concept revolves around the equation &quot;a + me.&quot; Here, &quot;a&quot; symbolizes architecture—the foundational element of our work—while the &quot;+&quot; represents the collaboration with our clients, highlighting the personalized approach we take in each project. The term &quot;me&quot; signifies the range of services we provide, conveyed through various mediums. Together, these elements merge to reflect our commitment to co-creating unique architectural solutions that resonate with both our clients&apos; visions and the surrounding environment.
               </p>
               <Link href="/about" className="inline-block border-b border-white pb-1 hover:text-stone-300 hover:border-stone-300 transition-colors">
@@ -121,7 +121,7 @@ export default function Home() {
           <FadeIn>
             <div className="mb-12 md:text-center mx-auto">
               <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500 mb-4">What We Do</h2>
-              <h3 className="text-xl font-serif text-charcoal-900 uppercase tracking-widest">Comprehensive Design Solutions</h3>
+              <h3 className="text-sm font-medium text-charcoal-900 uppercase tracking-widest">Comprehensive Design Solutions</h3>
             </div>
           </FadeIn>
 
@@ -134,8 +134,8 @@ export default function Home() {
             ].map((svc, i) => (
               <FadeIn delay={i * 0.1} key={i}>
                 <div className="p-6 bg-stone-50 h-full border border-stone-100 hover:border-stone-200 transition-colors">
-                  <h4 className="text-xl font-serif text-charcoal-900 mb-3">{svc.title}</h4>
-                  <p className="text-stone-600 text-sm leading-relaxed">{svc.desc}</p>
+                  <h4 className="text-sm font-medium text-charcoal-900 mb-3 uppercase tracking-widest">{svc.title}</h4>
+                  <p className="text-stone-600 text-sm leading-loose">{svc.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -162,7 +162,7 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <h2 className="text-sm font-bold tracking-widest text-stone-500 mb-4">Why a+me</h2>
-              <h3 className="text-xl font-serif text-charcoal-900 mb-8 uppercase tracking-widest">Distinctive, Relevant, Enduring.</h3>
+              <h3 className="text-sm font-medium text-charcoal-900 mb-8 uppercase tracking-widest">Distinctive, Relevant, Enduring.</h3>
               <ul className="space-y-6">
                 {[
                   { title: "Context-driven", desc: "Responding thoughtfully to site, climate, and client aspirations." },
@@ -174,8 +174,8 @@ export default function Home() {
                       <Check className="w-3 h-3" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-charcoal-900 uppercase tracking-widest">{item.title}</h4>
-                      <p className="text-stone-600 text-sm">{item.desc}</p>
+                      <h4 className="text-sm font-medium text-charcoal-900 uppercase tracking-widest">{item.title}</h4>
+                      <p className="text-stone-600 text-sm leading-loose">{item.desc}</p>
                     </div>
                   </li>
                 ))}
@@ -192,7 +192,7 @@ export default function Home() {
       <Section className="bg-charcoal-900 text-white py-24">
         <Container className="text-center">
           <FadeIn>
-            <p className="text-sm text-stone-400 mb-8 mx-auto">
+            <p className="text-sm text-stone-400 mb-8 mx-auto leading-loose">
               Let&apos;s discuss your vision and how we can bring it to life through thoughtful design.
             </p>
             <Button variant="primary" size="lg" href="https://wa.me/919606407820" className="bg-white text-charcoal-900 hover:bg-stone-200">

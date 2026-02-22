@@ -6,8 +6,8 @@ import { Footer } from "./Footer";
 export function ConditionalFooter() {
     const pathname = usePathname();
 
-    // Hide footer on contact page
-    if (pathname === "/contact") {
+    // Only show footer on home page
+    if (pathname !== "/") {
         return null;
     }
 

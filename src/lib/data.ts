@@ -66,7 +66,7 @@ export const team = [
     },
     {
         name: "Ar. Akshay C",
-        role: "Principal Architect",
+        role: "Co Founder | Principal Architect",
         bio: "B.Arch – School of Planning and Architecture, Vijayawada. Specializes in integrating innovative design solutions with practical execution strategies.",
         image: "/Ar.Akshay C.jpg"
     }

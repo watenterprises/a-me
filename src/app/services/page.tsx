@@ -16,10 +16,10 @@ export default function ServicesPage() {
     return (
         <div className="flex flex-col">
             {/* Hero */}
-            <section className="bg-stone-900 text-stone-100 pt-32 pb-16 md:pt-48 md:pb-24">
+            <section className="bg-charcoal-900 text-white pt-24 pb-12 md:pt-32 md:pb-16">
                 <Container>
                     <FadeIn>
-                        <h1 className="text-5xl md:text-7xl font-serif mb-8 text-white">
+                        <h1 className="text-3xl md:text-5xl font-serif mb-8 text-white">
                             Our Expertise
                         </h1>
                         <p className="text-sm text-stone-400 leading-relaxed">
@@ -41,8 +41,8 @@ export default function ServicesPage() {
                                         <div className="w-16 h-16 bg-stone-100 flex items-center justify-center rounded-sm group-hover:bg-charcoal-900 transition-colors duration-500">
                                             <Icon className="w-8 h-8 text-charcoal-900 group-hover:text-white transition-colors duration-500" strokeWidth={1} />
                                         </div>
-                                        <h3 className="text-xl font-serif text-charcoal-900 uppercase tracking-widest">{service.title}</h3>
-                                        <p className="text-stone-600 leading-relaxed text-sm">{service.description}</p>
+                                        <h3 className="text-sm font-medium text-charcoal-900 uppercase tracking-widest">{service.title}</h3>
+                                        <p className="text-stone-600 leading-loose text-sm">{service.description}</p>
                                     </div>
                                 </FadeIn>
                             );
@@ -58,8 +58,8 @@ export default function ServicesPage() {
                         <div className="md:w-1/2 space-y-8">
                             <FadeIn>
                                 <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500">Holistic Approach</h2>
-                                <h3 className="text-xl font-serif text-charcoal-900 uppercase tracking-widest">Integrated Design Solutions</h3>
-                                <p className="text-sm text-stone-600 leading-relaxed">
+                                <h3 className="text-sm font-medium text-charcoal-900 uppercase tracking-widest">Integrated Design Solutions</h3>
+                                <p className="text-sm text-stone-600 leading-loose">
                                     We offer a seamless experience by integrating architecture, interior design, and landscape consultancy. This cohesive approach ensures your vision is unified from the structure to the smallest interior detail.
                                 </p>
                                 <div className="space-y-4">

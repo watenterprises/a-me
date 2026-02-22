@@ -3,7 +3,7 @@
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
-import { Mail, MapPin, Phone, Instagram } from "lucide-react";
+import { Mail, MapPin, Phone, Instagram, Linkedin, MessageCircle } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { useState } from "react";
 
@@ -51,7 +51,7 @@ export default function ContactPage() {
                         <div className="space-y-12">
                             <div>
                                 <FadeIn delay={0.1}>
-                                    <h3 className="text-3xl font-serif text-charcoal-900 mb-6 uppercase tracking-widest">Office</h3>
+                                    <h3 className="text-sm font-medium text-charcoal-900 mb-6 uppercase tracking-widest">Office</h3>
                                     <ul className="space-y-6">
                                         <li className="flex gap-4 items-start">
                                             <MapPin className="w-6 h-6 text-charcoal-900 mt-1" />
@@ -110,7 +110,7 @@ export default function ContactPage() {
                         {/* Form */}
                         <div className="bg-stone-50 p-8 md:p-12 rounded-sm">
                             <FadeIn delay={0.3}>
-                                <h3 className="text-3xl font-serif text-charcoal-900 mb-8 uppercase tracking-widest">Send a Message</h3>
+                                <h3 className="text-sm font-medium text-charcoal-900 mb-8 uppercase tracking-widest">Send a Message</h3>
                                 <form className="space-y-6" onSubmit={handleSubmit}>
                                     <div className="space-y-2">
                                         <label htmlFor="name" className="text-sm font-bold text-stone-500">Name</label>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                                             required
                                             value={formData.name}
                                             onChange={handleChange}
-                                            className="w-full bg-white border border-stone-200 p-4 focus:outline-none focus:border-charcoal-900 transition-colors"
+                                            className="w-full bg-white border border-stone-200 p-4 focus:outline-none focus:border-charcoal-900 transition-colors placeholder:text-xs"
                                             placeholder="Your Name"
                                         />
                                     </div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                                             required
                                             value={formData.email}
                                             onChange={handleChange}
-                                            className="w-full bg-white border border-stone-200 p-4 focus:outline-none focus:border-charcoal-900 transition-colors"
+                                            className="w-full bg-white border border-stone-200 p-4 focus:outline-none focus:border-charcoal-900 transition-colors placeholder:text-xs"
                                             placeholder="your@email.com"
                                         />
                                     </div>
@@ -144,7 +144,7 @@ export default function ContactPage() {
                                             rows={6}
                                             value={formData.message}
                                             onChange={handleChange}
-                                            className="w-full bg-white border border-stone-200 p-4 focus:outline-none focus:border-charcoal-900 transition-colors"
+                                            className="w-full bg-white border border-stone-200 p-4 focus:outline-none focus:border-charcoal-900 transition-colors placeholder:text-xs"
                                             placeholder="Tell us about your project..."
                                         />
                                     </div>
@@ -155,6 +155,43 @@ export default function ContactPage() {
                     </div>
                 </Container>
             </Section>
+
+            {/* Simple Footer */}
+            <footer className="bg-white py-8 border-t border-stone-100 mt-auto">
+                <Container>
+                    <div className="flex justify-end items-center gap-6">
+                        <a
+                            href="https://www.instagram.com/aplusme.in/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-stone-400 hover:text-charcoal-900 transition-colors"
+                            aria-label="Instagram"
+                        >
+                            <Instagram size={20} />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-stone-400 hover:text-charcoal-900 transition-colors"
+                            aria-label="LinkedIn"
+                        >
+                            <Linkedin size={20} />
+                        </a>
+                    </div>
+                </Container>
+            </footer>
+
+            {/* Floating WhatsApp Icon */}
+            <a
+                href="https://wa.me/919606407820"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-24 right-8 z-50 bg-charcoal-900 text-white p-4 rounded-full shadow-lg hover:bg-stone-800 transition-all duration-300 hover:scale-110 md:bottom-8"
+                aria-label="Contact on WhatsApp"
+            >
+                <MessageCircle size={24} />
+            </a>
         </div>
     );
 }
